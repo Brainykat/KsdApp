@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:id="@+id/cordinator">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Details"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:textSize="50dp"/>
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tap card to get details"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="16dp"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/regnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration:"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grade:"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meal type"
+            android:layout_margin="10dp"/>
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinner_MealType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/meal_type_arrays"
+            android:layout_margin="10dp">
+        </android.support.v7.widget.AppCompatSpinner>
+        <Button
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Meal"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
